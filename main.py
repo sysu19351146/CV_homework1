@@ -37,10 +37,10 @@ class StepLossAccInfo(Callback):
 
 
 def save_step(args,steps_loss,steps_eval,steps_train):
-    np.save(args.model_type+"/step.npy",steps_loss["step"])
-    np.save(args.model_type+"/loss.npy",steps_loss["loss_value"])
-    np.save(args.model_type+"/train_acc.npy",steps_train["acc"])
-    np.save(args.model_type+"/val_acc.npy",steps_eval["acc"])
+    np.save("/step.npy",steps_loss["step"])
+    np.save("/loss.npy",steps_loss["loss_value"])
+    np.save("/train_acc.npy",steps_train["acc"])
+    np.save("/val_acc.npy",steps_eval["acc"])
 
 
 
